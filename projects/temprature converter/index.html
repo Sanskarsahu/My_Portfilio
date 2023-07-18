@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>temprature converter</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box">
+            <p>Temperature Converter</p>
+            <div class="input">
+                <input type="text" placeholder="enter the temprature" id="input" oninput="validate(this.value)"  >
+                <select name="unit" id="unit">
+                    <option value="" disabled selected hidden>select an unit</option>
+                    <option value="celsius">celsius</option>
+                    <option value="fahrenheit">fahrenheit</option>
+                </select>
+            </div>
+            <div class="output">
+                <input type="text" id="output">
+                <select name="unit2" id="unit2">
+                    <option value="" disabled selected hidden>select an unit</option>
+                    <option value="celsius">celsius</option>
+                    <option value="fahrenheit">fahrenheit</option>
+                </select>
+            </div>
+            <div class="button">
+            <button onclick="convert(this.value)"> convert </button>
+            <button><a href="/">reset</a></button>
+            </div>
+          <span id="numloc"></span>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
