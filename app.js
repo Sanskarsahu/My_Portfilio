@@ -51,7 +51,7 @@ function newsletter(){
             message: message
           };
 
-          emailjs.send('service_dqr9yie', 'template_d5uflxj', templateParams)
+          emailjs.send('service_op10cbn', 'template_zpzfqmi', templateParams)
             .then(function(response) {
               console.log('SUCCESS!', response.status, response.text);
               alert('Message sent successfully!');
